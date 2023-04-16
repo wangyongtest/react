@@ -9,7 +9,9 @@
 ## 注意事项三：  npm install husky -D
 
 - npm pkg set scripts.prepare = "husky install"
-- npm run prepare
-- npx husky add .husky/pre-commit "npm test"
+- 在 package.json 中添加 "husky install"
+- 执行： npm run prepare
+- npx husky add .husky/pre-commit "npm run lint"
+- npx husky add .husky/pre-commit "npm run format"
 - git add .husky/pre-commit
 - git commit -m "keep calm add commit"

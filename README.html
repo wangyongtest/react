@@ -726,8 +726,10 @@ hue-6-2: #e6c07b
 <h2 id="注意事项三--npm-install-husky--d">注意事项三：  npm install husky -D</h2>
 <ul>
 <li>npm pkg set scripts.prepare = &quot;husky install&quot;</li>
-<li>npm run prepare</li>
-<li>npx husky add .husky/pre-commit &quot;npm test&quot;</li>
+<li>在 package.json 中添加 &quot;husky install&quot;</li>
+<li>执行： npm run prepare</li>
+<li>npx husky add .husky/pre-commit &quot;npm run lint&quot;</li>
+<li>npx husky add .husky/pre-commit &quot;npm run format&quot;</li>
 <li>git add .husky/pre-commit</li>
 <li>git commit -m &quot;keep calm add commit&quot;</li>
 </ul>
