@@ -3,3 +3,6 @@ build/*.js
 coverage
 .vscode/*
 public/
+/node_modules/
+*.config.js
+*.json

@@ -1,0 +1,15 @@
+# Ignore artifacts:
+build
+coverage
+
+# Ignore all HTML files:
+*.html
+
+# So by default it will be
+**/.git
+**/.svn
+**/node_modules
+
+
+*.json
+*.config.js
